@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
@@ -9,6 +9,7 @@ import HomeScreen from "./HomeScreen";
 
 function App() {
   const [{ user }, dispatch] = useStateProviderValue();
+  console.log(dispatch);
   return (
     <div className="app">
       {!user ? (
