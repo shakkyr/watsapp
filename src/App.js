@@ -2,20 +2,19 @@ import React from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
-// import Login from "./Login";
+import Login from "./Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useStateProviderValue } from "./StateProvider";
 import HomeScreen from "./HomeScreen";
 
 function App() {
   const [{ user }, dispatch] = useStateProviderValue();
-  console.log(user);
   console.log(dispatch);
   return (
     <div className="app">
-      {/* {!user ? (
+      {!user ? (
         <Login />
-      ) : ( */}
+      ) : (
         <div className="app__body">
           <Router>
             <Sidebar />
@@ -29,7 +28,7 @@ function App() {
             </Switch>
           </Router>
         </div>
-      
+      )}
     </div>
   );
 }

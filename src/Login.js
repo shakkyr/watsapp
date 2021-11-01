@@ -24,7 +24,7 @@ function Login() {
     <div className="login">
       <div className="login__container">
         <div className="login__text">
-          <h1>Sign in to <span style={{color:'tomato'}}>ShhhChat</span></h1>
+          <h1>Sign in to <span style={{color:"tomato"}}>ShhhChat</span></h1>
         </div>
 
         <Button type="submit" onClick={signIn}>
